@@ -14,8 +14,9 @@ module.exports = {
         "mobile-landing": "url('/mobile/mobile-background.png')"
       },
       fontFamily: {
-        "carot": ["Carot Display"],
-        "operina": ["P22 Operina Pro"]
+        "carot": "Carot Display",
+        "operina": "P22 Operina Pro",
+        "museo": "Museo Sans"
       }
     },
   },

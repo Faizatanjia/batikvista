@@ -6,24 +6,48 @@
   @font-face {
     font-family: 'Carot Display';
     font-weight: 400;
-    src: local('Carot Display Regular'), url(/fonts/Carot-Display-Regular.ttf) format('ttf');
+    src: url(/fonts/Carot-Display-Regular.ttf) format('truetype');
   }
   
   @font-face {
     font-family: 'Carot Display';
     font-style: italic;
-    src: local('Carot Display Italic'), url(/fonts/Carot-Display-Italic.ttf) format('ttf');
+    src: url(/fonts/Carot-Display-Italic.ttf) format('truetype');
   }
   
   @font-face {
     font-family: 'Carot Display';
     font-weight: 700;
-    src: local('Carot Display Bold'), url(/fonts/Carot-Display-Bold.ttf) format('ttf');
+    src: url(/fonts/Carot-Display-Bold.ttf) format('truetype');
   }
   
   @font-face {
     font-family: 'P22 Operina Pro';
     font-weight: 400;
-    src: local('P22 Operina Pro'), url(/fonts/p22-operina-pro.ttf) format('ttf');
+    src: url(/fonts/p22-operina-pro.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Museo Sans';
+    font-weight: 100;
+    src: url(/fonts/MuseoSans-100.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Museo Sans';
+    font-weight: 300;
+    src: url(/fonts/MuseoSans-300.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Museo Sans';
+    font-weight: 500;
+    src: url(/fonts/MuseoSans-500.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Museo Sans';
+    font-weight: 700;
+    src: url(/fonts/MuseoSans-700.otf) format('opentype');
   }
 }
