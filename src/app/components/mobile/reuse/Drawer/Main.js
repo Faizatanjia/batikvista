@@ -12,7 +12,7 @@ const Main = ({ children }) => {
           {/* Page content here */}
           {children}
         </div>
-        <div className="drawer-side">
+        <div className="drawer-side z-20">
           <label
             htmlFor="drawer-mobile"
             aria-label="close sidebar"

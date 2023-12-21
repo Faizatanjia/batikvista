@@ -21,6 +21,8 @@ module.exports = {
         "museo": "Museo Sans"
       },
       colors: {
+        "secondary": "#AA700B",
+        "secondary-hover": "#8C5E0D",
         "black-sidebar": "#1E1E1E",
         "paragraph-black": "#393939",
         "paragraph-subheading": "#7B7777"
