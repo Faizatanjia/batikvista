@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import DrawerLogo from "@/app/components/reuse/logo/DrawerLogo";
 
@@ -25,32 +26,36 @@ const Main = ({ children }) => {
                   <ul className="font-carot text-[#5D5D5D] text-center text-[22px] flex flex-col space-y-8">
                     {/* Sidebar content here */}
                     <li>
-                      <a
+                      <Link
                         className={`hover:text-white hover:font-bold w-full flex justify-center`}
+                        href="/mobile/"
                       >
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className={`hover:text-white hover:font-bold w-full flex justify-center`}
+                        href="/mobile/about"
                       >
                         About
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className={`hover:text-white hover:font-bold w-full flex justify-center`}
+                        href="/mobile/art-works"
                       >
                         Art works
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className={`hover:text-white hover:font-bold w-full flex justify-center`}
+                        href="/mobile/search"
                       >
                         Search
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true,
   content: [
     "./node_modules/flowbite/**/*.js",
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -20,7 +21,9 @@ module.exports = {
         "museo": "Museo Sans"
       },
       colors: {
-        "black-sidebar": "#1E1E1E"
+        "black-sidebar": "#1E1E1E",
+        "paragraph-black": "#393939",
+        "paragraph-subheading": "#7B7777"
       }
     },
   },

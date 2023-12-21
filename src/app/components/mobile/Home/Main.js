@@ -1,9 +1,18 @@
+"use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
 
 import Drawer from "@/app/components/mobile/reuse/Drawer/Main";
 import WhiteLogo from "@/app/components/reuse/logo/WhiteLogo";
 
 export default function Main() {
+  const router = useRouter();
+
+  const handleGetStarted = () => {
+    router.push("/mobile/art-works");
+  };
+
   return (
     <Drawer>
       <div className="flex min-h-screen flex-col bg-mobile-landing bg-cover bg-center">
@@ -20,7 +29,10 @@ export default function Main() {
             </div>
 
             <div className="pt-4 w-full flex justify-between space-x-5">
-              <button className="border border-white font-museo font-[500] text-white text-lg w-40 rounded-md px-4 py-3">
+              <button
+                className="border border-white font-museo font-[500] text-white text-lg w-40 rounded-md px-4 py-3"
+                onClick={handleGetStarted}
+              >
                 Get Started
               </button>
               <div className="flex items-center">
@@ -33,7 +45,7 @@ export default function Main() {
             <label
               htmlFor="drawer-mobile"
               className="bg-white rounded-full p-3 flex items-center justify-center"
-              aria-controls="drawer-example"
+              aria-controls="drawer-mobile"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
