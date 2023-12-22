@@ -1,9 +1,14 @@
+"use client";
+
 import React from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { isMobile } from "react-device-detect";
 
 import DrawerLogo from "@/app/components/reuse/logo/DrawerLogo";
 
 const Main = ({ children }) => {
+  const router = useRouter();
+
   return (
     <>
       <div className="drawer">
@@ -26,36 +31,65 @@ const Main = ({ children }) => {
                   <ul className="font-carot text-[#5D5D5D] text-center text-[22px] flex flex-col space-y-8">
                     {/* Sidebar content here */}
                     <li>
-                      <Link
+                      <button
                         className={`hover:text-white hover:font-bold w-full flex justify-center`}
-                        href="/mobile/"
+                        onClick={() => {
+                          if (isMobile) {
+                            router.push("/mobile/");
+                            return;
+                          }
+
+                          router.push("/");
+                        }}
                       >
                         Home
-                      </Link>
+                      </button>
                     </li>
                     <li>
-                      <Link
+                      <button
                         className={`hover:text-white hover:font-bold w-full flex justify-center`}
-                        href="/mobile/about"
+                        onClick={() => {
+                          if (isMobile) {
+                            router.push("/mobile/about");
+                            return;
+                          }
+
+                          router.push("/about");
+                        }}
                       >
                         About
-                      </Link>
+                      </button>
                     </li>
                     <li>
-                      <Link
+                      <button
                         className={`hover:text-white hover:font-bold w-full flex justify-center`}
-                        href="/mobile/art-works"
+                        onClick={() => {
+                          if (isMobile) {
+                            router.push("/mobile/art-works");
+                            return;
+                          }
+
+                          router.push("/art-works");
+                        }}
+                        
                       >
                         Art works
-                      </Link>
+                      </button>
                     </li>
                     <li>
-                      <Link
+                      <button
                         className={`hover:text-white hover:font-bold w-full flex justify-center`}
-                        href="/mobile/search"
+                        onClick={() => {
+                          if (isMobile) {
+                            router.push("/mobile/search");
+                            return;
+                          }
+
+                          router.push("/search");
+                        }}
                       >
                         Search
-                      </Link>
+                      </button>
                     </li>
                   </ul>
                 </div>
