@@ -21,7 +21,7 @@ export default function Main() {
                         <div>
                             <h1 className="font-carot font-bold text-[#2B2B2B] text-[65px] leading-[5rem]">Notable Indonesian Artworks</h1>
                             <p className="font-carot italic text-[#484848] text-2xl">1805-1900s</p>
-                            <p className="pt-7 font-carot text-[#606060] leading-6">Indonesia, with its diverse cultural tapestry and rich history, has been eloquently captured through the brushstrokes of visionary artists. Among the custodians of the nation's cultural heritage are Raden Saleh, Sindudarsono Sudjojono, and Hendra Gunawan, whose historical paintings have become timeless reflections of Indonesia&apos; past, contributing to the collective identity and cultural legacy of the nation.</p>
+                            <p className="pt-7 font-carot text-[#606060] leading-6">Indonesia, with its diverse cultural tapestry and rich history, has been eloquently captured through the brushstrokes of visionary artists. Among the custodians of the nation&apos; cultural heritage are Raden Saleh, Sindudarsono Sudjojono, and Hendra Gunawan, whose historical paintings have become timeless reflections of Indonesia&apos; past, contributing to the collective identity and cultural legacy of the nation.</p>
                         </div>
                     </div>
                     {/* Image */}
@@ -54,7 +54,7 @@ export default function Main() {
                                     <h1 className="pt-5 font-carot font-bold text-[#2B2B2B] text-3xl text-center">Notable Indonesian Artworks</h1>
                                     <p className="font-carot italic text-[#484848] text-lg text-center">1805-1900s</p>
                                     <div className="w-full flex justify-center">
-                                        <p className="pt-7 font-carot text-[#606060] text-md leading-5">Indonesia, with its diverse cultural tapestry and rich history, has been eloquently captured through the brushstrokes of visionary artists. Among the custodians of the nation's cultural heritage are Raden Saleh, Sindudarsono Sudjojono, and Hendra Gunawan, whose historical paintings have become timeless reflections of Indonesia&apos; past, contributing to the collective identity and cultural legacy of the nation.</p>
+                                        <p className="pt-7 font-carot text-[#606060] text-md leading-5">Indonesia, with its diverse cultural tapestry and rich history, has been eloquently captured through the brushstrokes of visionary artists. Among the custodians of the nation&apos; cultural heritage are Raden Saleh, Sindudarsono Sudjojono, and Hendra Gunawan, whose historical paintings have become timeless reflections of Indonesia&apos; past, contributing to the collective identity and cultural legacy of the nation.</p>
                                     </div>
                                 </div>
                             </div>
