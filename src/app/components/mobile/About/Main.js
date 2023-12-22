@@ -21,7 +21,7 @@ export default function Main() {
           <div className="w-full flex justify-center">
             <div>
               {/* Image thumbnail */}
-              <div className="relative w-full h-80">
+              <div className="relative w-[357px] h-[319px]">
                 <div className="w-full h-full overflow-hidden rounded-xl my-5">
                   <img
                     src="/mobile/about/about-us-art-illustration.png"
