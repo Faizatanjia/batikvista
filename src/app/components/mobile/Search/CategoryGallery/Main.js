@@ -1,6 +1,11 @@
+"use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const CategoryGallery = () => {
+  const router = useRouter();
+  
   return (
     <div className="pt-8">
       <div className="grid grid-cols-2 gap-4">
@@ -45,7 +50,12 @@ const CategoryGallery = () => {
         </div>
 
         {/* Artists */}
-        <div className="col-span-2 relative w-full h-40 cursor-pointer">
+        <div 
+          className="col-span-2 relative w-full h-40 cursor-pointer"
+          onClick={() => {
+            router.push("/mobile/artist/raden-saleh");
+          }}
+        >
           <div className="w-full h-full overflow-hidden rounded-xl">
             <img
               src="/mobile/category-gallery/artists-category.png"
