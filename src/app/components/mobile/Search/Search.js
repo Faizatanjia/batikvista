@@ -37,6 +37,7 @@ const Search = ({ setCurrentPage }) => {
               <h3 className="font-museo font-semibold text-lg">Results</h3>
               <div className="py-5">
                 <ResultCard
+                  id="the-arrest-of-pangeran-diponegoro"
                   title="The Arrest of Pangeran Diponegoro"
                   artist="Raden Saleh Syarif Bustaman (1807 or 1811 - 1880)"
                   imageUrl="/mobile/search-card/the-arrest-of-pangeran-diponegoro.png"
@@ -49,6 +50,7 @@ const Search = ({ setCurrentPage }) => {
                 />
 
                 <ResultCard
+                  id="ali-sadikin-pada-masa-kemerdekaan"
                   title="Ali Sadikin Pada Masa Kemerdekaan"
                   artist="Hendra Gunawan (1918-1983)"
                   imageUrl="/mobile/search-card/ali-sadikin-pada-masa-kemerdekaan.png"

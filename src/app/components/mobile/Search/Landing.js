@@ -1,17 +1,26 @@
+"use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
 
 import NavigationBar from "@/app/components/mobile/reuse/NavigationBar/Main";
 
 const Landing = ({ setCurrentPage }) => {
+  const router = useRouter();
+
   const handleContinueSearch = () => {
     setCurrentPage("searchPage");
   };
 
+  const goBack = () => {
+    router.back();
+  }
+
   return (
     <>
       {/* Navigation Bar */}
-      <NavigationBar hidePageName={true} menu={false} />
-      <div className="max-w-full mt-10 px-10">
+      <NavigationBar hidePageName={true} menu={false} onClick={goBack} />
+      <div className="max-w-full mt-10 px-10 pb-10">
         <div className="w-full flex justify-center">
           <div>
             <img

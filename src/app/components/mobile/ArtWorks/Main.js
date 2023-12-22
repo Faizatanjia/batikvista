@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation";
 
 import NavigationBar from "@/app/components/mobile/reuse/NavigationBar/Main";
 import Drawer from "@/app/components/mobile/reuse/Drawer/Main";
@@ -8,6 +9,12 @@ import NotableArtworks from "./NotableArtworks/Main";
 import MusicPlayer from "@/app/components/mobile/reuse/MusicPlayer/Main";
 
 export default function Main() {
+  const router = useRouter();
+
+  const goBack = () => {
+    router.back();
+  }
+
   return (
     <Drawer>
       <div className="flex min-h-screen flex-col bg-white">
@@ -15,6 +22,7 @@ export default function Main() {
         <NavigationBar 
           pageName="Notable Indonesian Artworks" 
           menu 
+          onClick={goBack}
         />
         <div className="max-w-full mt-5 px-10">
           {/* Introduction */}

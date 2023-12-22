@@ -15,7 +15,7 @@ const CategoryGallery = () => {
             <img
               src="/mobile/category-gallery/oil-painting-category-artwork.png"
               alt="Oil Painting Category Artwork"
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full bg-cover bg-center object-cover overflow-hidden"
             />
           </div>
 
@@ -35,7 +35,7 @@ const CategoryGallery = () => {
             <img
               src="/mobile/category-gallery/historical-category-artwork.png"
               alt="Historical Category Artwork"
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full bg-cover bg-center object-cover overflow-hidden"
             />
           </div>
 
@@ -60,7 +60,7 @@ const CategoryGallery = () => {
             <img
               src="/mobile/category-gallery/artists-category.png"
               alt="Artists Category"
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full bg-cover bg-center object-cover overflow-hidden"
             />
           </div>
 

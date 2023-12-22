@@ -25,7 +25,7 @@ const Main = ({ data }) => {
             <img
               src={data.imageUrlExpanded}
               alt={`${data.title} - Expanded`}
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full bg-cover bg-center object-cover overflow-hidden"
             />
           </div>
 
@@ -57,7 +57,7 @@ const Main = ({ data }) => {
                   <img
                     src={data.imageUrlMinimized}
                     alt={`${data.title} - Minimized`}
-                    className="w-full h-full bg-cover bg-center"
+                    className="w-full h-full bg-cover bg-center object-cover overflow-hidden"
                   />
                 </div>
               </div>
@@ -127,16 +127,27 @@ const Main = ({ data }) => {
                 {data.blogContent.map((blogContent, index) => (
                   <div key={index} className={`${data.type === "artist" ? "pt-10" : "pt-7"}`}>
                     <div className="relative flex py-5 items-center">
-                      <span className="flex-shrink mr-4 font-carot text-3xl">{blogContent.title}</span>
-                      <div className="flex-grow border-t border-black"></div>
+                      <span className={`${data.type === "painting" && "font-bold"} flex-shrink mr-4 font-carot text-3xl`}>{blogContent.title}</span>
+                      {data.type === "painting" && blogContent.title !== "Mirror and Reflection" && <div className="flex-grow border-t border-black"></div>}
                     </div>
 
                     {/* Paragraph content */}
                     <div>
                       {blogContent.content.map((content, index) => (
-                        <p key={index} className="font-museo text-sm font-black-sidebar font-[300] pb-5">
-                          {content}
-                        </p>
+                        <div key={index}>
+                          {data.type === "painting" && blogContent.imageUrl && index === 0 &&(
+                            <div className="w-auto h-[242px] overflow-hidden pb-5">
+                              <img
+                                  src={blogContent.imageUrl}
+                                  alt={`${content.title}`}
+                                  className="w-full h-full bg-cover bg-center object-cover overflow-hidden"
+                                />
+                            </div>
+                          )}
+                          <p className="font-museo text-sm font-black-sidebar font-[300] pb-5">
+                            {content}
+                          </p>
+                        </div>
                       ))}
                     </div>
                   </div>

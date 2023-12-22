@@ -1,13 +1,26 @@
+"use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const ResultCard = ({
+  id,
   title = "",
   artist = "",
   imageUrl="",
   tags = []
 }) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/mobile/painting/${id}`);
+  }
+
   return (
-  <div className="pb-7">
+  <div 
+    className="pb-7"
+    onClick={handleClick}
+  >
     <div className="w-full border border-[#EEF4F4] py-3 px-7 rounded-xl cursor-pointer">
       <div className="w-full flex justify-center">
         <div className="w-full">
@@ -18,7 +31,7 @@ const ResultCard = ({
             <img 
               src={imageUrl}
               alt={title}
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full bg-cover bg-center object-cover overflow-hidden"
             />
           </div>
 

@@ -1,12 +1,17 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation";
 
 import Drawer from "@/app/components/mobile/reuse/Drawer/Main";
 import NavigationBar from "@/app/components/mobile/reuse/NavigationBar/Main";
 
 export default function Main() {
-  const handleBack = () => {};
+  const router = useRouter();
+
+  const handleBack = () => {
+    router.back();
+  }
 
   return (
     <div className="flex min-h-screen flex-col bg-white">
@@ -21,7 +26,7 @@ export default function Main() {
                   <img
                     src="/mobile/about/about-us-art-illustration.png"
                     alt="About Us Art Illustration"
-                    className="w-full h-full bg-cover bg-center"
+                    className="w-full h-full bg-cover bg-center object-cover overflow-hidden"
                   />
                 </div>
 

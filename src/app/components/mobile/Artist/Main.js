@@ -25,13 +25,9 @@ export default function Main() {
     artistDetailImageUrl: "/mobile/artist/raden-saleh/raden-saleh-detail.png"
   }
 
-  const handleBack = () => {
-
-  }
-
   return (
     <div>
-        <Blog data={data} handleBack={handleBack}/>
+        <Blog data={data} />
     </div>
   );
 }
