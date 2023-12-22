@@ -173,7 +173,7 @@ const Main = ({ data }) => {
             )}
 
             {/* Audio Player */}
-            <div className="mt-14 mb-12 relative z-10 rounded-xl">
+            <div className="mt-14 mb-12 relative rounded-xl">
               <h3 className="font-museo font-bold text-lg pb-5">Audio Guide</h3>
               <div className="transition-all duration-500transition-all duration-500 pb-6 space-y-6">
                 <div className="space-y-2">
