@@ -136,7 +136,7 @@ export default function Main() {
             <div className="w-full flex justify-center">
               <div>
                 <h2 className="text-left font-carot text-2xl pb-7">
-                  Problem we aim to solve
+                  What we are proud of
                 </h2>
                 <h3 className="font-museo font-[500] text-sm">
                   We transform the way people learn art.{" "}
