@@ -67,7 +67,7 @@ const Search = ({ setCurrentPage }) => {
             <div className="fixed bottom-5 right-0 mb-5 mr-5 text-white">
               <label
                 htmlFor="drawer-mobile"
-                className="bg-black rounded-full p-3 flex items-center justify-center"
+                className="bg-black rounded-full p-3 flex items-center justify-center cursor-pointer"
                 aria-controls="drawer-mobile"
               >
                 <svg

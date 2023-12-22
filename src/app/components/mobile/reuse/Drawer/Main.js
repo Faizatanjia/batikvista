@@ -65,7 +65,7 @@ const Main = ({ children }) => {
             <div className="absolute bottom-2 right-0 mb-5 mr-5 z-10">
               <label
                 htmlFor="drawer-mobile"
-                className="bg-white rounded-full p-3 flex items-center justify-center"
+                className="bg-white rounded-full p-3 flex items-center justify-center cursor-pointer"
                 aria-controls="drawer-example"
               >
                 <svg

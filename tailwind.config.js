@@ -13,7 +13,8 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "mobile-landing": "url('/mobile/mobile-background.png')"
+        "mobile-landing": "url('/mobile/mobile-background.png')",
+        "desktop-landing": "url('/desktop/desktop-background.png')",
       },
       fontFamily: {
         "carot": "Carot Display",
