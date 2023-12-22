@@ -15,7 +15,7 @@ const FilterSelect = () => {
         isMulti={false}
         placeholder="Popularity"
         components={{ DropdownIndicator }}
-        className="font-bold text-sm"
+        className="font-bold text-sm md:text-lg"
         unstyled
         classNames={{
           control: () => "w-full rounded-md py-3 space-x-2 border-none",
