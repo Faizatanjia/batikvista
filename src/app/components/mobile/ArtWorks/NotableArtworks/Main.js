@@ -51,7 +51,7 @@ const NotableArtworks = () => {
       >
         <img
           className="-mt-4 w-[45px] h-[45px] object-cover mr-1"
-          alt="Perburuan Banteng Icon"
+          alt="Pasukan Kita yang Dipimpin Pangeran Diponegoro Icon"
           src="/mobile/art-works-icon/pasukan-kita-yang-dipimpin-pangeran-diponegoro.png"
         />
 
@@ -109,11 +109,11 @@ const NotableArtworks = () => {
       {/* The Arrest of Pangeran Diponegoro */}
       <div
         className="max-w-full flex flex-row cursor-pointer space-x-4 mb-12"
-        onClick={() => handleNavigateToPainting("perburuan-banteng")}
+        onClick={() => handleNavigateToPainting("the-arrest-of-pangeran-diponegoro")}
       >
         <img
           className="-mt-4 w-[45px] h-[45px] object-cover mr-1"
-          alt="Perburuan Banteng Icon"
+          alt="The Arrest of Pangeran Diponegoro Icon"
           src="/mobile/art-works-icon/the-arrest-of-pangeran-diponegoro.png"
         />
 

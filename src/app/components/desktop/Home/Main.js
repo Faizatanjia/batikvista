@@ -20,17 +20,31 @@ export default function Main() {
           {/* Navigation Bar - Full Size */}
           <div className="hidden md:block">
             <div className="flex justify-start flex-row space-x-10 items-center">
-              <WhiteLogo />
-              <div className="cursor-pointer font-museo font-[700] text-white">
+              <div onClick={() => router.push("/")}>
+                <WhiteLogo />
+              </div>
+              <div 
+                className="cursor-pointer font-museo font-[700] text-white"
+                onClick={() => router.push("/")}
+              >
                 Home
               </div>
-              <div className="cursor-pointer font-museo font-[700] text-white">
+              <div 
+                className="cursor-pointer font-museo font-[700] text-white"
+                onClick={() => router.push("/about")}
+              >
                 About
               </div>
-              <div className="cursor-pointer font-museo font-[700] text-white">
+              <div 
+                className="cursor-pointer font-museo font-[700] text-white"
+                onClick={() => router.push("/art-works")}
+              >
                 Art Works
               </div>
-              <div className="cursor-pointer font-museo font-[700] text-white">
+              <div 
+                className="cursor-pointer font-museo font-[700] text-white"
+                onClick={() => router.push("/search")}
+              >
                 Search
               </div>
             </div>
@@ -47,7 +61,7 @@ export default function Main() {
             </label>
           </div>
 
-          <div className="pt-80 pb-20 md:pb-28 md:pb-32 text-white">
+          <div className="pt-80 pb-20 md:pb-28 lg:pb-32 text-white">
             <div className="font-carot text-3xl md:text-5xl">
               <h1>Exploring Indonesia&apos;s</h1>
               <h2>Traditional Paintings</h2>
