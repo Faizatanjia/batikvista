@@ -1,5 +1,7 @@
+import AboutPage from "@/app/components/mobile/About/Main";
+
 function About() {
-    return <div>About Page</div>;
+    return <AboutPage />;
 }
 
 export default About;

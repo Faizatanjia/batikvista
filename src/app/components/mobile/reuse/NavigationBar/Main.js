@@ -10,7 +10,7 @@ const NavigationBar = ({
   onClick = () => {}
  }) => {
   return (
-    <div className={`sticky z-10 top-0 bg-white pt-4 w-full flex justify-between py-5 ${(hidePageName || !menu) ? "px-10" : "px-6"}`}>
+    <div className={`sticky z-10 top-0 bg-white pt-10 w-full flex justify-between py-5 ${(hidePageName || !menu) ? "px-10" : "px-6"}`}>
       <button className="flex items-center" onClick={onClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
