@@ -1,63 +1,18 @@
 "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation";
 
 import Drawer from "@/app/components/mobile/reuse/Drawer/Main";
-import BrownLogo from "@/app/components/reuse/logo/BrownLogo";
+import NavigationBar from "@/app/components/desktop/reuse/NavigationBar/Main";
 import NotableArtworks from "./NotableArtworks";
 import MusicPlayer from "@/app/components/desktop/reuse/MusicPlayer/Main";
 
 export default function Main() {
-  const router = useRouter();
-
   return (
     <Drawer>
       <div className="min-h-screen min-w-full bg-white">
         <div className="w-full px-5 py-5 lg:px-20 lg:pt-5 lg:pb-10">
-            {/* Navigation Bar - Full Size */}
-            <div className="hidden md:block">
-            <div className="flex justify-start flex-row space-x-10 items-center">
-                <div onClick={() => router.push("/")}>
-                <BrownLogo />
-                </div>
-                <div
-                className="cursor-pointer font-museo font-[700] text-black"
-                onClick={() => router.push("/")}
-                >
-                Home
-                </div>
-                <div
-                className="cursor-pointer font-museo font-[700] text-black"
-                onClick={() => router.push("/about")}
-                >
-                About
-                </div>
-                <div
-                className="cursor-pointer font-museo font-[700] text-black"
-                onClick={() => router.push("/art-works")}
-                >
-                Art Works
-                </div>
-                <div
-                className="cursor-pointer font-museo font-[700] text-black"
-                onClick={() => router.push("/search")}
-                >
-                Search
-                </div>
-            </div>
-            </div>
-
-            {/* Navigation Bar - Small Size */}
-            <div className="block md:hidden">
-            <label
-                htmlFor="drawer-mobile"
-                className="cursor-pointer"
-                aria-controls="drawer-mobile"
-            >
-                <BrownLogo />
-            </label>
-            </div>
+            <NavigationBar />
 
             <div className="w-full flex justify-center">
                 {/* Hero - Big Screen*/}

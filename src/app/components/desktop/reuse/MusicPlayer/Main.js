@@ -1,6 +1,11 @@
 import React from "react";
 
-const Main = () => {
+const Main = ({
+  title = "Jali-Jali (Folk Melodies Orchestra)",
+  artist = "Shi Li . 2012",
+  imageUrl = "/mobile/icons/jali-jali-icon.png",
+
+}) => {
   return (
     <div className="sticky bottom-0 w-full bg-white">
       <div className="bg-white w-full rounded-t-lg pt-2 md:pt-7 pb-5 px-5 md:px-20">
@@ -29,17 +34,17 @@ const Main = () => {
               <div className="flex items-center">
                 <img
                   className="w-[70px] h-[70px] object-cover flex items-center"
-                  alt="Jali Jali Icon"
-                  src="/mobile/icons/jali-jali-icon.png"
+                  alt={title}
+                  src={imageUrl}
                 />
               </div>
 
               <div className="flex flex-col font-museo items-center">
                 <h3 className="font-[500] text-center text-lg">
-                  Jali-Jali (Folk Melodies Orchestra)
+                  {title}
                 </h3>
                 <p className="font-[300] text-center text-md text-paragraph-subheading">
-                  Shi Li . 2012
+                  {artist}
                 </p>
               </div>
 
